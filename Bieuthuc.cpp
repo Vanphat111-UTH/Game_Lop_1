@@ -17,7 +17,8 @@ char randomPhepToan(int level) {
 
 }
 
-Bieuthuc::Bieuthuc(int level) {
+Bieuthuc::Bieuthuc(int level)
+{
     srand(time(NULL));
     switch (level) {
     case 1:
