@@ -1,27 +1,11 @@
 #include <iostream>
-#include "Bieuthuc.h"
-#include "BieuthucCong.h"
-#include "BieuthucTru.h"
-#include "BieuthucNhan.h"
+#include "Dethi.h"
 
 using namespace std;
 
 int main() {
-    float traloi;
-    BieuthucCong bt1(1);
-    BieuthucTru bt2(2);
-    BieuthucNhan bt3(3);
-    cout << bt1;
-    cout << " = ";
-    cin >> traloi;
-    cout << bt1.kiemtra(traloi) << endl;
-    cout << bt2;
-    cout << " = ";
-    cin >> traloi;
-    cout << bt2.kiemtra(traloi) << endl;
-    cout << bt3;
-    cout << " = ";
-    cin >> traloi;
-    cout << bt3.kiemtra(traloi) << endl;
+    Dethi ts(0, 3, 3, 2);
+    ts.xuat();
+    cout << ts.danhgia();
 return 0;
 }
