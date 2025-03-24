@@ -4,51 +4,48 @@
 using namespace std;
 
 char randomPhepToan(int level) {
-    srand(time(NULL));
     if (level == 4) {
         char a;
-        return a = (rand() % 2 == 0) ? '+' : '-';
+        return a = (randomNumber() % 2 == 0) ? '+' : '-';
     }
-    int temp = rand() % level + 1;
+    int temp = randomNumber() % level + 1;
     if (temp == 1) return '+';
     else if (temp == 2) return '-';
     else if (temp == 3) return '*';
     else return randomPhepToan(level - 1);
-
 }
 
 Bieuthuc::Bieuthuc(int level)
 {
-    srand(time(NULL));
     switch (level) {
     case 1:
-        a = rand() % 11;
-        b = rand() % 11;
+        a = randomNumber() % 11;
+        b = randomNumber() % 11;
         pheptoan = randomPhepToan(level);
         break;
     case 2:
-        a = rand() % 11;
-        b = rand() % 11;
+        a = randomNumber() % 11;
+        b = randomNumber() % 11;
         pheptoan = randomPhepToan(level);
         break;
     case 3:
-        a = rand() % 11;
-        b = rand() % 11;
+        a = randomNumber() % 11;
+        b = randomNumber() % 11;
         pheptoan = randomPhepToan(level);
         break;
     case 4:
-        a = rand() % 101;
-        b = rand() % 101;
+        a = randomNumber() % 101;
+        b = randomNumber() % 101;
         pheptoan = randomPhepToan(level);
         break;
     case 5:
-        a = rand() % 101;
-        b = rand() % 101;
+        a = randomNumber() % 101;
+        b = randomNumber() % 101;
         pheptoan = randomPhepToan(level);
         break;
     default:
-        a = rand() % 101;
-        b = rand() % 101;
+        a = randomNumber() % 101;
+        b = randomNumber() % 101;
         pheptoan = randomPhepToan(level);
         break;
     }

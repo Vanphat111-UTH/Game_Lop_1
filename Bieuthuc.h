@@ -3,7 +3,7 @@
 #pragma once
 
 #include <iostream>
-#include <cstdlib>
+#include "Random.h"
 
 class Bieuthuc
 {
