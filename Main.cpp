@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    Dethi ts(0, 3, 3, 2);
+    Dethi ts(1, 10, 0, 1);
     ts.xuat();
     cout << ts.danhgia();
 return 0;
