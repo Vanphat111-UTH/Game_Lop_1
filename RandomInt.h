@@ -5,4 +5,4 @@
 #include <random>
 #include <vector>
 
-int randomNumber();
+int randomInt(int max);
